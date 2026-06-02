@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.9.1/fonts/remixicon.min.css">
+    <title>Giovani OS</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <link rel="stylesheet" href="css/desktop/style.css">
+</head>
+
+<body>
+    <main>
+
+        <div class="como-funciona" id="inicializacao" style="display: none;">
+            <p id="text-descricao"></p>
+            <p id="texto-descricao"></p>
+        </div>
+
+        <!-- Tela de login usuario-->
+
+        <section class="screen-login" id="screen">
+            <div id="relogio"></div>
+            <div class="card">
+                <img src="assets/img/perfil.jpeg" alt="perfil" width="100">
+                <h1>Bem-vindo de volta!</h1>
+                <p>Giovani</p>
+                <div class="input-box">
+                    <div class="pass">
+                        <i class="ri-lock-line"></i>
+                        <input type="password" class="senha" id="senha" placeholder="Digite sua senha">
+                        <i id="icon" class="ri-eye-close-line"></i>
+                    </div>
+                    <input type="button" id="btn-input" value="Entrar" class="btn-login">
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Todo o sistema dentro -->
+
+        <section id="linux" class="linux-system">
+
+            <!--Clique com direito -->
+            <aside class="direito" id="direito">
+                <button id="novapasta"><i class="ri-folder-add-line"></i> Criar nova pasta</button>
+                <button id="direito_terminal"><i class="ri-terminal-box-line"></i> Abrir terminal</button>
+                <button id="direito_walpaper"><i class="ri-image-add-line"></i> Alterar plano de fundo</button>
+                <button id="github"><i class="ri-github-fill"></i> Abrir github</button>
+                <button id="linkdin"><i class="ri-linkedin-box-line"></i> Abrir linkedin</button>
+                <hr>
+                <button id="fecharjanela"><i class="ri-function-line"></i> Desligar sistema</button>
+            </aside>
+
+            <!-- Dock-->
+            <div class="dock">
+                <div class="menu-bar" id="menu-bar">
+                    <div class="img" id="menu">
+                        <span>Menu</span>
+                        <img src="assets/icons/menu.svg" alt="menu" width="20">
+                    </div>
+                    <div class="img" id="terminal-abrir">
+                        <span>Terminal</span>
+                        <img src="assets/icons/terminal.svg" alt="terminal" width="20">
+                    </div>
+                    <div class="img" id="arquivos">
+                        <span>Arquivos</span>
+                        <img src="assets/icons/folder.svg" alt="folder" width="20">
+                    </div>
+                    <div class="img">
+                        <span>GitHub</span>
+                        <img src="assets/icons/github.svg" alt="github" width="20">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!--Gerenciador de arquivos -->
+
+            <article class="window janela" id="gerenciador">
+                <header class="window-header barra">
+                    <div class="windows-btn">
+                        <div class="btn-fechar">
+                            <button class="fechar mini" id="fechar"></button>
+                            <button class="maximizar mini"></button>
+                            <button class="minimizar mini" id="minimizar"></button>
+                        </div>
+                        <h3 class="mini">Gerenciador de Arquivos</h3>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" name="text" id="text" class="text mini" placeholder="Buscar...">
+                    </div>
+                </header>
+
+                <section class="window-body">
+                    <aside class="sidebar">
+                        <div class="side">
+                            <div class="card-sidebar" data-target="arte5">
+                                <div class="card-side">
+                                    <i class="ri-folder-5-line"></i>
+                                    <div class="cert-card">
+                                        <h3 class="mini">Arquivos</h3>
+                                        <p class="mini">Meus arquivos</p>
+                                    </div>
+                                </div>
+                                <i class="ri-arrow-right-s-line mini"></i>
+                            </div>
+                        </div>
+                    </aside>
+
+                    <section class="arte" id="arte5">
+                        <div class="arq">
+                            <div class="curriculos" id="arq-curriculo"></div>
+                        </div>
+                    </section>
+
+                </section>
+            </article>
+
+            <!--COnfiguracao do sistema -->
+
+            <article class="menu-sistema janela" id="sistema-menu">
+                <header class="menu-header barra">
+                    <div class="titulo-menu">
+                        <h3>Configurações do Sistema</h3>
+                    </div>
+
+                    <div class="btn-menu">
+                        <i class="ri-subtract-line"></i>
+                        <i class="ri-fullscreen-exit-line"></i>
+                        <button class="fec" id="fechar-menu"><i class="ri-close-line"></i></button>
+                    </div>
+                </header>
+                <hr>
+                <section class="aparencia-menu">
+                    <div class="aparencia-status">
+                        <svg height="14px" width="14px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 58 58" xml:space="preserve"
+                            fill="#000000">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <g>
+                                    <path style="fill:#556080;"
+                                        d="M29,0C12.984,0,0,12.984,0,29c0,16.016,12.984,29,29,29c26.688,0-0.203-16.043,5-21 c5.545-5.282,24,2.688,24-8C58,12.984,45.016,0,29,0z M33.38,32.008c-1.439,0.009-3.581,0.156-4.38,0.918 c-1.286,1.226-1.382,2.83-1.038,4.162c0.227,0.878-0.647,1.607-1.473,1.233c-2.267-1.026-3.777-3.438-3.442-6.149 c0.32-2.585,2.391-4.718,4.967-5.103c2.79-0.417,5.289,1.127,6.324,3.459C34.644,31.217,34.135,32.003,33.38,32.008z">
+                                    </path>
+                                    <circle style="fill:#DC691D;" cx="29" cy="8" r="4"></circle>
+                                    <circle style="fill:#F7E6A1;" cx="29" cy="50" r="4"></circle>
+                                    <circle style="fill:#26B99A;" cx="50" cy="27" r="4"></circle>
+                                    <circle style="fill:#EBBA16;" cx="8" cy="29" r="4"></circle>
+                                    <circle style="fill:#ED8A19;" cx="14.151" cy="14.151" r="4"></circle>
+                                    <circle style="fill:#7383BF;" cx="42" cy="14.151" r="4"></circle>
+                                    <circle style="fill:#EFCE4A;" cx="14.151" cy="43.849" r="4"></circle>
+                                </g>
+                            </g>
+                        </svg>
+                        <p>Aparencia</p>
+                    </div>
+                    <div class="icons">
+                        <div class="icone-menu" id="wallparede">
+                            <img src="assets/icons/icons-menu/wallpaper.svg" alt="wallpaper" width="40">
+                            <p>Wallpapers</p>
+                        </div>
+                    </div>
+                </section>
+                <hr>
+                <section class="aparencia-menu">
+                    <div class="aparencia-status">
+                        <i class="ri-apps-fill"></i>
+                        <p>Apricativos</p>
+                    </div>
+                    <div class="icons">
+                        <div class="icone-menu" id="arquivos">
+                            <img src="/assets/icons/icons-menu/file.svg" alt="file" width="40">
+                            <p>Arquivos</p>
+                        </div>
+                        <div class="icone-menu" id="menu_github">
+                            <img src="assets/icons/icons-menu/github.svg" alt="github" width="40">
+                            <p>GitHub</p>
+                        </div>
+                        <div class="icone-menu" id="menu_linkdin">
+                            <img src="assets/icons/icons-menu/linkedin.svg" alt="linkdin" width="40">
+                            <p>Linkedin</p>
+                        </div>
+                        <div class="icone-menu" id="menu_terminal">
+                            <img src="assets/icons/icons-menu/terminal.svg" alt="terminal" width="40">
+                            <p>Terminal</p>
+                        </div>
+                        <div class="icone-menu" id="calculator">
+                            <img src="assets/icons/icons-menu/calculadora.svg" alt="calculadora" width="40">
+                            <p>Calculadora</p>
+                        </div>
+                        <div class="icone-menu">
+                            <img src="assets/icons/icons-menu/calendar.svg" alt="calendario" width="40">
+                            <p>Calendario</p>
+                        </div>
+                        <div class="icone-menu">
+                            <img src="assets/icons/icons-menu/blocodenotas.svg" alt="Bloco de notas" width="40">
+                            <p>Bloco de notas</p>
+                        </div>
+                        <div class="icone-menu" id="lista-tarefas-btn">
+                            <img src="assets/icons/icons-menu/lista.svg" alt="lista de tarefa" width="40">
+                            <p>Lista de tarefas</p>
+                        </div>
+                    </div>
+                </section>
+            </article>
+            <!--Calculadora-->
+
+            <article class="calculator janela " id="calculadora">
+                <div class="barra">
+                    <div class="fechar-cal ">
+                        <button id="fechar-calculator"></button>
+                    </div>
+                    <div class="input-calculator">
+                        <input type="text" class="input" disabled>
+                    </div>
+                    <div class="buttons">
+                        <button class="btn apagar">AC</button>
+                        <button class="btn apagar-um">C</button>
+                        <button class="btn operador">%</button>
+                        <button class="btn operador">/</button>
+                        <button class="btn numero">7</button>
+                        <button class="btn numero">8</button>
+                        <button class="btn numero">9</button>
+                        <button class="btn operador">*</button>
+                        <button class="btn numero">4</button>
+                        <button class="btn numero">5</button>
+                        <button class="btn numero">6</button>
+                        <button class="btn operador">-</button>
+                        <button class="btn numero">1</button>
+                        <button class="btn numero">2</button>
+                        <button class="btn numero">3</button>
+                        <button class="btn operador">+</button>
+                        <button class="btn numero">0</button>
+                        <button class="btn numero">.</button>
+                        <button class="btn resultado zero">=</button>
+                    </div>
+                </div>
+            </article>
+            <!--  Papel de parede -->
+            <article class="wallpaper janela" id="wallpaper">
+                <div class="papel-de-parede">
+                    <div class="info-papel barra">
+                        <button class="fechar-wall" id="fecha-all"></button>
+                        <h2>Papel de Parede</h2>
+                        <p>Modifique o papel de parede o jeito que achar melhor.</p>
+                    </div>
+                    <div class="content-papel" id="img-papel"></div>
+                </div>
+            </article>
+
+            <article class="lista-de-tarefas janela" id="lista-de-tarefas">
+                <div class="secao-home">
+                    <div class="secao-lista barra">
+                        <div class="top-info">
+                            <button id="fechar-lista"></button>
+                            <h4>Lista de tarefa</h4>
+                        </div>
+                        <div class="lista" id="lista"></div>
+                    </div>
+                    <div class="bloco-input">
+                        <div class="input-bx">
+                            <input type="text" id="titulo-lista" class="titulo-lista" placeholder="Digite algo..">
+                        </div>
+                        <div class="input-area">
+                            <input type="text" name="tarefas" id="tarefas-paragrafo" placeholder="Digite um texto..">
+                        </div>
+                    </div>
+                    <div class="salvar">
+                        <button class="salvar-btn" id="btn-salvar"><i class="ri-check-line"></i></button>
+                        <span>Salvar</span>
+                    </div>
+                </div>
+
+            </article>
+
+            <!-- terminal  -->
+            <article class="terminal-hero janela" id="terminal-hero">
+                <div class="icon-terminal barra">
+                    <h4>Terminal Portifolio</h4>
+                    <button id="fechar-terminal"></button>
+                </div>
+                <div class="terminal">
+                    <div id="output">
+                        <p class="help">Digite help</p>
+                    </div>
+                    <div class="input-area">
+                        <span>giovani@portfolio:~$</span>
+                        <input type="text" id="input" autofocus>
+                    </div>
+                </div>
+            </article>
+
+
+        </section>
+    </main>
+
+    <script type="module" src="js/desktop/main.js"></script>
+
+
+</body>
+
+</html> 

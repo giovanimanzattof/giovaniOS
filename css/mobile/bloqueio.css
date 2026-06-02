@@ -1,0 +1,52 @@
+.bloqueio{
+    background: url("../../assets/img/bloqueio.png") center center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    z-index: 999;
+
+}
+.bloqueio-app{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+}
+.hors{
+    position: absolute;
+    top: 50px;
+    text-align: center;
+}
+
+.hors i{
+    color: #fff;
+    font-size: 30px;
+}
+
+.deslize{
+    position: absolute;
+    bottom: 5rem;
+    text-align: center;
+}
+.deslize p{
+    color: #fff;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 20px;
+}
+.deslize .linha{
+    background-color: #fff;
+    width: 10rem;
+    border-radius: 10px;
+    height: 5px;
+}
+#hrs{
+    color: #fff;
+    font-size: 5rem;
+    padding-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#semana{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}

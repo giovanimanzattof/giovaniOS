@@ -1,0 +1,9 @@
+import './app.js';
+import './arquivos.js';
+import './dock.js';
+import './janela.js';
+import './login.js';
+import './sistemaconfig.js';
+import './terminal.js';
+import './wallpapers.js';
+import './tarefa.js';

@@ -1,0 +1,20 @@
+@import 'login.css';
+@import 'linux.css';
+@import 'dock.css';
+@import 'sistem.css';
+@import 'arquivos.css';
+@import 'calculadora.css';
+@import 'wallpaper.css';
+@import 'listadetarefas.css';
+@import 'terminal.css';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.5s;
+    user-select: none;
+    
+}
+
+

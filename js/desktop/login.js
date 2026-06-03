@@ -1,4 +1,4 @@
-import { login, icon, linux, menu_bar, text_descricao, texto_descricao, inicializacao, inicio, screen } from "./linux.js";
+import { login, icon, linux, menu_bar, text_descricao, inicializacao, inicio, screen } from "./linux.js";
 const relogio = document.getElementById("relogio")
 // Comando para saber a senha //
 function eye(){
@@ -91,14 +91,14 @@ Os projetos estão integrados diretamente no Sistema Operacional Web.
 Abra o aplicativo 'Menu' no desktop virtual para explorar e testar cada aplicação em tempo real.
 `;
 // Função genérica de digitação
-function efeitoDigitacao(elemento, texto, callback = null) {
+function efeitoDigitacao(elemento, texto, velocidade = 50, callback = null) {
     let index = 0;
 
     function digitar() {
         if (index < texto.length) {
             elemento.innerHTML += texto.charAt(index);
             index++;
-            setTimeout(digitar, 50);
+            setTimeout(digitar, velocidade);
         } else {
             
             setTimeout(() => {
@@ -107,7 +107,9 @@ function efeitoDigitacao(elemento, texto, callback = null) {
                     inicializacao.style.visibility = 'hidden'
                 }
             }, 1100);
-            if(callback) callback();
+            if(typeof callback === "function"){
+                callback()
+            }
         }
     }
 

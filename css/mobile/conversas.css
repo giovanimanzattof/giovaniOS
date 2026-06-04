@@ -1,0 +1,239 @@
+.bapo-conversa{
+    background-color: #f7f7f7;
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    height: 30rem;
+    border: 2px solid gray;
+    border-radius: 7px;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+}
+.titulo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.438);
+    height: 3rem;
+}
+.titulo h1{
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 10px;
+}
+.titulo h1 span{
+    background: linear-gradient(90deg, rgba(67, 0, 145, 0.658), blue);
+    color: transparent;
+    background-clip: text;
+}
+
+.titulo .fechar-btn{
+    background-color: hsl(0, 100%, 50%);
+    color: #fff;
+    padding: 2px;
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 50%;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titulo .fechar-btn i{
+    font-size: 10px;
+}
+.contato{
+    margin-top: 1rem;
+    padding: 10px;
+}
+.cont{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.cont-conversa{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.616);
+    cursor: pointer;
+}
+
+.color1{
+    border-left: 4px solid rgb(0, 81, 255);
+}
+.color2{
+    border-left: 4px solid rgb(49, 0, 139);
+}
+.color3{
+    border-left: 4px solid rgb(119, 0, 255);
+}
+.color4{
+    border-left: 4px solid #0000ff;
+}
+.papo{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.papo p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 150px;
+    font-size: 14px;
+    color: rgb(66, 66, 66);
+}
+
+.conversa-ativo{
+    background-color: #f7f7f7;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    flex-direction: column;
+    overflow: hidden;
+    display: none;
+}
+.status{
+    height: 3rem;
+    box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.486);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+.status .icone i{
+    background: linear-gradient(90deg, rgb(92, 0, 128), blue);
+    color: transparent;
+    background-clip: text;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.pontinhos{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.pontinho{
+    height: 3px;
+    width: 3px;
+    background-color: #000;
+    border-radius: 10px;
+}
+.conversas{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 0;
+    overflow-y: auto;
+}
+.input-box{
+    margin-top: auto; 
+    height: 3rem;
+    width: 100%;
+    border-top: 1px solid rgba(128, 128, 128, 0.377);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff; 
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+}
+.input-box input{
+    background-color: #f7f7f7;
+    height: 2rem;
+    width: 15rem;
+    border-radius: 30px;
+    border: 1px solid gray;
+    padding-left: 10px;
+    box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.692);
+}
+.input-box input::placeholder{
+    color: rgba(61, 61, 61, 0.555);
+}
+.input-box .enviar{
+    padding: 10px;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: linear-gradient(30deg, rgb(49, 0, 128) 10%, blue);
+
+}
+.input-box .enviar i{
+    color: #fff;
+}
+.status-mensagens{
+    display: flex;
+    gap: 5px;
+}
+.status-mensagens h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+.status-mensagens p{
+    font-size: 12px;
+    white-space: nowrap;
+    width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.mensagem{
+    display:flex;
+    margin:10px 0;
+}
+
+.mensagem.recebida{
+    justify-content:flex-start;
+}
+
+.mensagem.enviada{
+    justify-content:flex-end;
+}
+
+.balao{
+    max-width:70%;
+    padding:12px;
+    border-radius:18px;
+    word-break:break-word;
+}
+
+.recebida .balao{
+    background:#fff;
+    color:#222;
+}
+
+.enviada .balao{
+    background:linear-gradient(135deg,#4f46e5,#7c3aed);
+    color:white;
+}
+
+.hora{
+    display:block;
+    margin-top:5px;
+    font-size:11px;
+    opacity:.7;
+}
+#mensagens-chat {
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

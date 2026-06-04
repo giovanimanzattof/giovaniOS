@@ -1,6 +1,7 @@
 @import 'bloqueio.css';
 @import 'senha.css';
 @import 'tela.css';
+@import 'conversas.css';
 
 * {
     margin: 0;

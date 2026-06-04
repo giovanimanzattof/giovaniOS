@@ -9,7 +9,7 @@
     <title>Giovani OS</title>
 </head>
 <body>
-        <section class="bloqueio" id="bloqueio" style=>
+        <section class="bloqueio" id="bloqueio">
             <div class="bloqueio-app">
                 <div class="hors">
                     <i class="ri-phone-lock-fill"></i>
@@ -55,66 +55,90 @@
             <section class="tela-inicial" id="tela-inicial">
                 <header class="header">
                     <div class="relogio-tela" id="relogio-tela"></div>
-
-                    <div class="icone">
-                        <div class="rede"></div>
-                        <div class="bateria">
-                            <div class="btr"></div>
-                        </div>
-                    </div>
                 </header>
-                <div class="tela-app">
-                    <div class="app">
-                        <div class="app-icone">
-                            <img src="assets/img/app.png" alt="sobre" width="60">
-                            <p>Sobre</p>
-                        </div>
-                        <div class="app-icone">
-                            <img src="assets/img/app2.png" alt="sobre" width="60">
-                            <p>Contato</p>
-                        </div>
-                        <div class="app-icone">
-                            <img src="assets/img/app1.png" alt="sobre" width="60">
-                            <p>Projetos</p>
-                        </div>
-                        <div class="app-icone">
-                            <img src="assets/img/app3.png" alt="sobre" width="60">
-                            <p>Certificados</p>
-                        </div>
-                        <div class="app-icone">
-                            <img src="assets/img/app4.png" alt="sobre" width="60">
-                            <p>Calculadora</p>
-                        </div>
-                        <div class="app-icone">
-                            <img src="assets/img/app5.png" alt="sobre" width="60">
-                            <p>Bloco de notas</p>
-                        </div>
-                        <div class="app-icone">
-                            <img src="assets/img/app6.png" alt="sobre" width="60">
-                            <p>Conversa</p>
-                        </div>
-                    </div>
-                </div>
                 <aside class="dock">
                     <div class="dock-x">
                         <div class="dock-app">
                             <div class="app-dock">
-                                <img src="assets/img/app.png" alt="sobre" width="50">
+                                <img src="assets/img/app4.png" alt="sobre" width="50">
                             </div>
                             <div class="app-dock">
-                                <img src="assets/img/app1.png" alt="sobre" width="50">
+                                <img src="assets/img/app5.png" alt="sobre" width="50">
                             </div>
-                            <div class="app-dock">
-                                <img src="assets/img/app2.png" alt="sobre" width="50">
-                            </div>
-                            <div class="app-dock">
-                                <img src="assets/img/app3.png" alt="sobre" width="50">
+                            <div class="app-dock" id="abrir-chat">
+                                <img src="assets/img/app6.png" alt="sobre" width="50">
                             </div>
                         </div>
                     </div>
                 </aside>
 
             </section>
+
+            <article class="bapo-conversa" id="conversa">
+                <header class="titulo">
+                    <h1>Portfólio<span>Chat</span></h1>
+                    <div class="fechar" id="fechar">
+                        <button class="fechar-btn"><i class="ri-close-large-line"></i></button>
+                    </div>
+
+                </header>
+                <aside class="contato">
+                    <div class="cont">
+                        <div class="cont-conversa color1" id="contato">
+                            <img src="assets/img/app.png" alt="sobre" width="40">
+                            <div class="papo">
+                                <h4>Sobre</h4>
+                                <p>Vamos conversar sobre mim, minha trajetória e trocar experiências?</p>
+                            </div>
+                        </div>
+                        <div class="cont-conversa color2" id="contato">
+                            <img src="assets/img/app2.png" alt="sobre" width="40">
+                            <div class="papo">
+                                <h4>Contato</h4>
+                                <p>Precisa falar comigo? Deixe sua mensagem aqui para conversarmos direto.</p>
+                            </div>
+                        </div>
+                        <div class="cont-conversa color3" id="contato">
+                            <img src="assets/img/app3.png" alt="sobre" width="40">
+                            <div class="papo">
+                                <h4>Certificados</h4>
+                                <p>Confira minhas conquistas acadêmicas, cursos e especializações concluídas.</p>
+                            </div>
+                        </div>
+                        <div class="cont-conversa color4" id="contato">
+                            <img src="assets/img/app1.png" alt="sobre" width="40">
+                            <div class="papo">
+                                <h4>Projetos</h4>
+                                <p>Explore meus principais projetos e veja como transformo ideias em código.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="conversa-ativo" id="consersas-ativas">
+                        <div class="status">
+                            <div class="icone" id="voltar">
+                                <i class="ri-arrow-left-s-line"></i>
+                            </div>
+                            <div id="status">
+
+                            </div>
+                            <div class="pontinhos">
+                                <div class="pontinho"></div>
+                                <div class="pontinho"></div>
+                                <div class="pontinho"></div>
+                            </div>
+                        </div>
+                        <div class="mensagens-chat" id="mensagens-chat">
+
+                        </div>
+                        <div class="conversas">
+                            <div class="input-box">
+                                <input type="text" placeholder="Digite sua mensagem..." id="inputMensagem">
+                                <button class="enviar" id="btnEnviar"><i class="ri-send-plane-2-fill"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </article>
         </main>
     <script type="module" src="js/mobile/mobile.js"></script>
 </body>
